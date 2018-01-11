@@ -14,8 +14,18 @@ body {
   border-radius: 10px;
 }
 
-.page-links {
-  margin-top: -1.5rem;
+.subtitle:not(:last-child), .title:not(:last-child) {
+  margin-bottom: 0rem;
+}
+
+.modal-card, .modal-content {
+  height: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  .modal-card, .modal-content {
+    width: 90%;
+  }
 }
 
 hr {
