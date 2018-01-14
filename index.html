@@ -14,7 +14,7 @@
   <script src="js/index.js"></script>
 </head>
 <body>
-<div class="modal" id="resume-modal">
+<div class="modal is-hidden-touch" id="resume-modal">
   <div class="modal-background" onclick="$('#resume-modal').toggleClass('is-active')"></div>
   <div class="modal-card">
     <iframe src="https://docs.google.com/document/d/e/2PACX-1vRD51gjlR6deoMelbs3iJ9einYEby1oeFp2_c1lYLVw6d5oiUKidW1UNSeFVOFnE7ZYuxzb5s1CIRf1/pub?embedded=true" width=100% height=100%></iframe>
@@ -32,24 +32,33 @@
           </div>
           <div class="column">
             <h1 class="title is-2">Kishan Emens</h1>
-            <a class="subtitle is-5" src="https://mail.google.com/mail/?view=cm&fs=1&to=email@domain.com">
+            <a class="subtitle is-5" href="https://mail.google.com/mail/?view=cm&fs=1&to=email@domain.com">
               kishanemens@gmail.com</a>
             <div class="page-links">
               <p class="field">
-                <a class="button is-primary is-outlined is-small">
+                <a class="button is-primary is-outlined is-small"
+                   href="https://github.com/phi-line">
                   <span class="icon">
                     <i class="fa fa-github"></i>
                   </span>
                   <span>GitHub</span>
                 </a>
-                <a class="button is-info is-outlined is-small">
+                <a class="button is-info is-outlined is-small"
+                   href="https://www.linkedin.com/in/kishanemens/">
                   <span class="icon">
                     <i class="fa fa-linkedin"></i>
                   </span>
                   <span>LinkedIn</span>
                 </a>
-                <a class="button is-danger is-outlined is-small" id="resume"
+                <a class="button is-danger is-outlined is-small is-hidden-touch" id="resume"
                    onclick="$('#resume-modal').toggleClass('is-active')">
+                  <span class="icon">
+                    <i class="fa fa-file-pdf-o"></i>
+                  </span>
+                  <span>Resume</span>
+                </a>
+                <a class="button is-danger is-outlined is-small is-hidden-desktop" id="resume"
+                   href="docs/ResumeJan-2018.pdf">
                   <span class="icon">
                     <i class="fa fa-file-pdf-o"></i>
                   </span>

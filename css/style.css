@@ -20,12 +20,7 @@ body {
 
 .modal-card, .modal-content {
   height: 100%;
-}
-
-@media screen and (min-width: 769px) {
-  .modal-card, .modal-content {
-    width: 90%;
-  }
+  width: 50rem;
 }
 
 hr {
