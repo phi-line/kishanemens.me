@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
+
   <script src="js/index.js"></script>
 </head>
 <body>
@@ -24,13 +28,13 @@
   <div class="hero-body">
     <div class="container is-widescreen">
       <div class="box main-content">
-        <div class="columns is-vcentered">
+        <div class="columns">
           <div class="column is-3 is-hidden-touch">
             <figure class="image is-1by1">
               <img class="profile-image" src="assets/profile_pic.jpg">
             </figure>
           </div>
-          <div class="column">
+          <div class="column is-vcentered">
             <h1 class="title is-2">Kishan Emens</h1>
             <a class="subtitle is-5" href="https://mail.google.com/mail/?view=cm&fs=1&to=kishanemens@gmail.com">
               kishanemens@gmail.com</a>
@@ -76,9 +80,13 @@
                 to expand my knowledge of technologies used today. I'm most proficient in Python, C++, and Javascript.
               </p>
             </div>
+            <div class="calendar is-hidden-mobile">
+              <img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" class="spinner"/>
+              <p class="spinner-text monospace">Loading <a href="https://github.com/phi-line">@phi-line</a>'s contributions just for you.</p>
+            </div>
+            <script>new GitHubCalendar(".calendar", "phi-line", {"global_stats":false, "responsive":true});</script>
           </div>
         </div>
-      </div>
     </div>
   </div>
 </section>
