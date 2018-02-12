@@ -1,28 +1,38 @@
+html {
+    background-color: rgb(197,190,249);
+}
+
 body {
-  font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
-.main-content {
-  background-color: rgba(255,255,255,.95);
+.box.main-content {
+    background-color: rgba(255,255,255,.99);
 }
 
-.hero.is-dark .title {
-  color: rgba(15,15,15,.9);
+.hero.is-cool {
+    color: rgb(245,245,245);
 }
 
 .profile-image {
-  border-radius: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
 }
 
 .subtitle:not(:last-child), .title:not(:last-child) {
-  margin-bottom: 0rem;
+    margin-bottom: 0rem;
 }
 
 .modal-card, .modal-content {
-  height: 100%;
-  width: 50rem;
+    height: 100%;
+    width: 50rem;
+}
+
+.link{
+    color: rgb(167,145,229);
 }
 
 hr {
-  margin: .5rem 0;
+    margin: .5rem 0;
 }

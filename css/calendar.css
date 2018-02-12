@@ -1,8 +1,10 @@
 .calendar {
     width: 100%;
     font-family: Helvetica, arial;
-    border: 1px solid #DDDDDD;
-    border-radius: 3px;
+    background-color: rgb(255,255,255);
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
     min-height: 243px;
     text-align: center;
     margin: 0 auto;
