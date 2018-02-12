@@ -13,7 +13,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
+  <link rel="stylesheet" href="css/calendar.css"/>
 
   <script src="js/index.js"></script>
 </head>
@@ -21,19 +21,22 @@
 <div class="modal is-hidden-touch" id="resume-modal">
   <div class="modal-background" onclick="$('#resume-modal').toggleClass('is-active')"></div>
   <div class="modal-card">
-    <iframe src="https://docs.google.com/document/d/e/2PACX-1vRD51gjlR6deoMelbs3iJ9einYEby1oeFp2_c1lYLVw6d5oiUKidW1UNSeFVOFnE7ZYuxzb5s1CIRf1/pub?embedded=true" width=100% height=100%></iframe>
+    <!-- <iframe src="https://docs.google.com/document/d/e/2PACX-1vSDlSKB1SR8Ug7hn2o_gs_fPoCQxiT-1SqTQOuQGD4WA2bZQFz_ZXKrMZtv12OrKxCju73ym4z_TYvL/pub?embedded=true" width=100% height=100%></iframe> -->
+    <object data="assets/resume.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="100%"></object>
   </div>
 </div>
 <section class="hero is-dark is-fullheight">
   <div class="hero-body">
     <div class="container is-widescreen">
+
       <div class="box main-content">
         <div class="columns">
-          <div class="column is-3 is-hidden-touch">
+          <div class="column is-3 is-vcentered is-hidden-touch">
             <figure class="image is-1by1">
               <img class="profile-image" src="assets/profile_pic.jpg">
             </figure>
-          </div>
+          </div>  <!-- column left -->
+
           <div class="column is-vcentered">
             <h1 class="title is-2">Kishan Emens</h1>
             <a class="subtitle is-5" href="https://mail.google.com/mail/?view=cm&fs=1&to=kishanemens@gmail.com">
@@ -62,15 +65,16 @@
                   <span>Resume</span>
                 </a>
                 <a class="button is-danger is-outlined is-small is-hidden-desktop" id="resume"
-                   href="docs/ResumeJan-2018.pdf">
+                   href="assets/resume.pdf">
                   <span class="icon">
                     <i class="fa fa-file-pdf-o"></i>
                   </span>
                   <span>Resume</span>
                 </a>
               </p>
-            </div>
+            </div> <!-- page links -->
             <hr>
+
             <div class="content">
               <p>Hi! I'm a Software Developer with a knowledge of a variety of languages and tools
                 under my belt. I love to do personal projects in my free time and have worked on many projects ranging from
@@ -80,13 +84,17 @@
                 to expand my knowledge of technologies used today. I'm most proficient in Python, C++, and Javascript.
               </p>
             </div>
+
             <div class="calendar is-hidden-mobile">
               <img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" class="spinner"/>
               <p class="spinner-text monospace">Loading <a href="https://github.com/phi-line">@phi-line</a>'s contributions just for you.</p>
             </div>
             <script>new GitHubCalendar(".calendar", "phi-line", {"global_stats":false, "responsive":true});</script>
-          </div>
-        </div>
+
+          </div> <!-- column right -->
+        </div>  <!-- columns -->
+      </div> <!-- box -->
+
     </div>
   </div>
 </section>
