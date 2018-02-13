@@ -8,98 +8,127 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="css/style.css">
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+  <!-- <script src="js/calendar.js"></script> -->
   <link rel="stylesheet" href="css/calendar.css"/>
 
-  <script src="js/index.js"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="modal is-hidden-touch" id="resume-modal">
-  <div class="modal-background" onclick="$('#resume-modal').toggleClass('is-active')"></div>
+  <div class="modal-background" onclick="toggleModal(false)"></div>
   <div class="modal-card">
     <!-- <iframe src="https://docs.google.com/document/d/e/2PACX-1vSDlSKB1SR8Ug7hn2o_gs_fPoCQxiT-1SqTQOuQGD4WA2bZQFz_ZXKrMZtv12OrKxCju73ym4z_TYvL/pub?embedded=true" width=100% height=100%></iframe> -->
     <object data="assets/resume.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="100%"></object>
   </div>
 </div>
 <section class="hero is-cool is-fullheight">
-  <div class="hero-body">
-    <div class="container is-widescreen">
+  <div class="hero-body is-flex-touch is-flex-desktop-only">
+    <div class="container">
 
       <div class="box main-content">
         <div class="columns">
           <div class="column is-3 is-vcentered is-hidden-touch">
-            <figure class="image is-1by1">
-              <img class="profile-image" src="assets/profile_pic.jpg">
-            </figure>
+            <div class="column is-12">
+              <figure class="image is-1by1">
+                <img class="profile-image" src="assets/profile_pic.jpg" height=100%>
+              </figure>
+            </div>
           </div>  <!-- column left -->
 
           <div class="column is-vcentered">
-            <h1 class="title is-2">Kishan Emens</h1>
-            <a class="subtitle is-5 email" href="https://mail.google.com/mail/?view=cm&fs=1&to=kishanemens@gmail.com">
-              kishanemens@gmail.com</a>
-            <div class="page-links">
-              <p class="field">
-                <a class="button is-primary is-outlined is-small"
-                   href="https://github.com/phi-line">
-                  <span class="icon">
-                    <i class="fa fa-github"></i>
-                  </span>
-                  <span>GitHub</span>
-                </a>
-                <a class="button is-info is-outlined is-small"
-                   href="https://www.linkedin.com/in/kishanemens/">
-                  <span class="icon">
-                    <i class="fa fa-linkedin"></i>
-                  </span>
-                  <span>LinkedIn</span>
-                </a>
-                <a class="button is-danger is-outlined is-small is-hidden-touch" id="resume"
-                   onclick="$('#resume-modal').toggleClass('is-active')">
-                  <span class="icon">
-                    <i class="fa fa-file-pdf-o"></i>
-                  </span>
-                  <span>Resume</span>
-                </a>
-                <a class="button is-danger is-outlined is-small is-hidden-desktop" id="resume"
-                   href="assets/resume.pdf">
-                  <span class="icon">
-                    <i class="fa fa-file-pdf-o"></i>
-                  </span>
-                  <span>Resume</span>
-                </a>
-              </p>
-            </div> <!-- page links -->
-            <hr>
-
-            <div class="content">
-              <p>Hi! I'm a Software Developer with a knowledge of a variety of languages and tools
-                under my belt. In my free time, I am an active github contributor and have worked on many topics ranging from
-                <a class="link" href="https://github.com/phi-line/oolong">audio analysis</a>,
-                Map based <a class="link" href="https://github.com/BoomSyrup/Garbougie">web apps</a>,
-                and asynchonous <a class="link" href="https://github.com/phi-line/arbot">chatbots</a>.
-              </p><p>
-                Currently, I am looking for a software engineering opportunity with a growing startup.
-                My goal is to leverage my existing technical knowledge and learn new technologies from my peers.
-                I'm most proficient in Python, and Javascript.
-              </p>
+            <div class="column is-12">
+              <h1 class="title is-2">Kishan Emens</h1>
+              <a class="subtitle is-5 email" href="https://mail.google.com/mail/?view=cm&fs=1&to=kishanemens@gmail.com">
+                kishanemens@gmail.com</a>
+              <div class="page-links">
+                <p class="field">
+                  <a class="button is-primary is-outlined is-small"
+                     href="https://github.com/phi-line">
+                    <span class="icon">
+                      <i class="fa fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                  </a>
+                  <a class="button is-info is-outlined is-small"
+                     href="https://www.linkedin.com/in/kishanemens/">
+                    <span class="icon">
+                      <i class="fa fa-linkedin"></i>
+                    </span>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a class="button is-danger is-outlined is-small is-hidden-touch" id="resume"
+                     onclick="toggleModal(true)">
+                    <span class="icon">
+                      <i class="fa fa-file-pdf-o"></i>
+                    </span>
+                    <span>Resume</span>
+                  </a>
+                  <a class="button is-danger is-outlined is-small is-hidden-desktop" id="resume"
+                     href="assets/resume.pdf">
+                    <span class="icon">
+                      <i class="fa fa-file-pdf-o"></i>
+                    </span>
+                    <span>Resume</span>
+                  </a>
+                </p>
+              </div> <!-- page links -->
+              <hr>
             </div>
+            <div class="column is-12 is-vcentered">
+              <div class="content">
+                <p>Hi! I'm a Software Developer with a knowledge of a variety of languages and tools
+                  under my belt. In my free time, I am an active github contributor and have worked on many topics ranging from
+                  <a class="link" href="https://github.com/phi-line/oolong">audio analysis</a>,
+                  Map based <a class="link" href="https://github.com/BoomSyrup/Garbougie">web apps</a>,
+                  and asynchonous <a class="link" href="https://github.com/phi-line/arbot">chatbots</a>.
+                </p><p>
+                  Currently, I am looking for a software engineering opportunity with a growing startup.
+                  My goal is to leverage my existing technical knowledge and learn new technologies from my peers.
+                  I'm most proficient in Python, and Javascript.
+                </p>
+              </div>
+            </div>
+          </div> <!-- column right -->
+        </div>  <!-- columns -->
 
+        <div class="columns">
+          <div class="column is-3 is-hidden-touch is-hidden-desktop-only" id="latest-commit">
+            <h2 class="subtitle is-size-5">Latest commit:</h2>
+            </br>
+            <div class='box'>
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+                    <img id="commit-image" src="https://bulma.io/images/placeholders/128x128.png">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <strong id="commit-name"></strong> <small id="commit-username"></small> <small id="commit-date"></small>
+                    <br>
+                    <p id="commit-message"></p>
+                  </div>
+                </div>
+              </article>
+            </div> <!-- box -->
+          </div> <!-- column left -->
+
+          <div class="column is-vcentered">
             <div class="calendar is-hidden-mobile">
               <img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" class="spinner"/>
               <p class="spinner-text monospace">Loading <a href="https://github.com/phi-line">@phi-line</a>'s contributions just for you.</p>
             </div>
             <script>new GitHubCalendar(".calendar", "phi-line", {"global_stats":false, "responsive":true});</script>
-
           </div> <!-- column right -->
-        </div>  <!-- columns -->
+        </div> <!-- columns -->
       </div> <!-- box -->
 
     </div>
   </div>
 </section>
+
+<script src="js/index.js"></script>
 </body>
 </html>
