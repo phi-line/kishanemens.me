@@ -20,6 +20,31 @@ body {
     box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
 }
 
+.message.commit-card {
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.message-header {
+    background-color: rgb(245,245,245);
+    border-radius: 5px 5px 0 0;
+    color: #000;
+}
+
+.message-body {
+    border: 0px;
+    border-radius: 5px;
+    color: #4a4a4a;
+    padding: .5em .75em;
+}
+
+.message a:not(.button):not(.tag) {
+    color: rgb(167,145,229);
+    text-decoration: none;
+}
+
 .subtitle:not(:last-child), .title:not(:last-child) {
     margin-bottom: 0rem;
 }
@@ -29,7 +54,7 @@ body {
     width: 50rem;
 }
 
-.link{
+a, .link {
     color: rgb(167,145,229);
 }
 
