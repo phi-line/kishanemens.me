@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 function toggleModal(state) {
-    let modal = getElement('resume-modal');
+    let modal = getElement('resume-modal').classList;
     state ? modal.add('is-active') : modal.remove('is-active');
 }
 

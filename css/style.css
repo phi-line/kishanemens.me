@@ -7,7 +7,8 @@ body {
 }
 
 .box.main-content {
-    background-color: rgba(255,255,255,.99);
+    background-color: rgba(255,255,255,.97);
+    padding: .75em;
 }
 
 .hero.is-cool {
@@ -15,6 +16,7 @@ body {
 }
 
 .profile-image {
+    height: 100%;
     border-radius: 5px;
     -webkit-box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
     box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
