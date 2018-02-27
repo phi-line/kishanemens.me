@@ -19,7 +19,7 @@
 </head>
 <body>
 <div class="background-image"></div>
-<div class="modal is-hidden-touch" id="resume-modal">
+<div class="modal is-hidden-mobile" id="resume-modal">
   <div class="modal-background" onclick="toggleModal(false)"></div>
   <div class="modal-card">
     <!-- <iframe src="https://docs.google.com/document/d/e/2PACX-1vSDlSKB1SR8Ug7hn2o_gs_fPoCQxiT-1SqTQOuQGD4WA2bZQFz_ZXKrMZtv12OrKxCju73ym4z_TYvL/pub?embedded=true" width=100% height=100%></iframe> -->
@@ -57,28 +57,42 @@
                   </div>
 
                   <div class="page-links">
-                    <a class="button is-primary is-small is-outlined"
+                    <a class="button is-primary is-hidden-mobile is-outlined"
                        href="https://github.com/phi-line">
                       <span class="icon">
                         <i class="fa fa-github"></i>
                       </span>
                       <span>GitHub</span>
                     </a>
-                    <a class="button is-info is-small is-outlined"
+                    <a class="button is-primary is-small is-hidden-tablet is-outlined"
+                       href="https://github.com/phi-line">
+                      <span class="icon">
+                        <i class="fa fa-github"></i>
+                      </span>
+                      <span>GitHub</span>
+                    </a>
+                    <a class="button is-info is-hidden-mobile is-outlined"
                        href="https://www.linkedin.com/in/kishanemens/">
                       <span class="icon">
                         <i class="fa fa-linkedin"></i>
                       </span>
                       <span>LinkedIn</span>
                     </a>
-                    <a class="button is-danger is-outlined is-small is-hidden-touch" id="resume"
+                    <a class="button is-info is-small is-hidden-tablet is-outlined"
+                       href="https://www.linkedin.com/in/kishanemens/">
+                      <span class="icon">
+                        <i class="fa fa-linkedin"></i>
+                      </span>
+                      <span>LinkedIn</span>
+                    </a>
+                    <a class="button is-danger is-outlined is-hidden-mobile" id="resume"
                        onclick="toggleModal(true)">
                       <span class="icon">
                         <i class="fa fa-file-pdf-o"></i>
                       </span>
                       <span>Resume</span>
                     </a>
-                    <a class="button is-danger is-outlined is-small is-hidden-desktop" id="resume"
+                    <a class="button is-danger is-outlined is-small is-hidden-tablet" id="resume"
                        href="assets/resume.pdf">
                       <span class="icon">
                         <i class="fa fa-file-pdf-o"></i>
