@@ -23,8 +23,13 @@ document.addEventListener('DOMContentLoaded', function(){
 }, false);
 
 
-function toggleModal(state) {
+function toggleResumeModal(state) {
     let modal = getElement('resume-modal').classList;
+    state ? modal.add('is-active') : modal.remove('is-active');
+}
+
+function toggleQRModal(state) {
+    let modal = getElement('qr-modal').classList;
     state ? modal.add('is-active') : modal.remove('is-active');
 }
 

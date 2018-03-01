@@ -20,10 +20,20 @@
 <body>
 <div class="background-image"></div>
 <div class="modal is-hidden-mobile" id="resume-modal">
-  <div class="modal-background" onclick="toggleModal(false)"></div>
+  <div class="modal-background" onclick="toggleResumeModal(false)"></div>
   <div class="modal-card">
-    <!-- <iframe src="https://docs.google.com/document/d/e/2PACX-1vSDlSKB1SR8Ug7hn2o_gs_fPoCQxiT-1SqTQOuQGD4WA2bZQFz_ZXKrMZtv12OrKxCju73ym4z_TYvL/pub?embedded=true" width=100% height=100%></iframe> -->
     <object data="assets/resume.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="100%"></object>
+  </div>
+</div>
+<div class="modal is-hidden-tablet" id="qr-modal">
+  <div class="modal-background" onclick="toggleQRModal(false)"></div>
+  <div class="qr-card" onclick="toggleQRModal(false)">
+    <figure class="image is-256x256">
+      <img src="assets/qr.svg">
+    </figure>
+    <div class="notification qr-message">
+      <span><strong>Scan me!</strong></span>
+    </div>
   </div>
 </div>
 <section class="hero is-cool is-fullheight">
@@ -86,7 +96,7 @@
                       <span>LinkedIn</span>
                     </a>
                     <a class="button is-danger is-outlined is-hidden-mobile" id="resume"
-                       onclick="toggleModal(true)">
+                       onclick="toggleResumeModal(true)">
                       <span class="icon">
                         <i class="fa fa-file-pdf-o"></i>
                       </span>
@@ -98,6 +108,12 @@
                         <i class="fa fa-file-pdf-o"></i>
                       </span>
                       <span>Resume</span>
+                    </a>
+                    <a class="button is-warning is-outlined is-small is-hidden-tablet" id="qr" onclick="toggleQRModal(true)">
+                      <span class="icon">
+                        <i class="fa fa-share-alt"></i>
+                      </span>
+                      <span>Share</span>
                     </a>
                   </div> <!-- page links -->
                   <hr>
