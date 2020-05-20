@@ -13,6 +13,10 @@ body {
     padding: .75em;
 }
 
+.box .header {
+    line-height: 2;
+}
+
 .hero.is-cool {
     color: rgb(245,245,245);
 }

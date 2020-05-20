@@ -1,6 +1,7 @@
 .calendar {
     width: 100%;
-    font-family: Helvetica, arial;
+    padding: 0.5em 1em;
+    font-family: 'Raleway', sans-serif;
     background-color: rgb(255,255,255);
     border-radius: 5px;
     -webkit-box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
@@ -137,6 +138,7 @@ li[style="background-color: #196127"] {
 
 .contrib-footer {
     font-size: 11px;
+    margin-top: 10px;
     padding: 0 10px 12px;
     text-align: left;
     width: 100%;
